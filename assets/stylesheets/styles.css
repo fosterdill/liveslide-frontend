@@ -1,4 +1,48 @@
 body {
   background-image: url('/assets/images/stardust.png');
   background-repeat: repeat;
+  color: #eaeaea;
+  font-family: 'Gafata';
+  font-size: 14pt;
+  overflow-x: hidden;
+}
+
+.jumbotron {
+  background: rgba(255, 255, 255, 0);
+}
+
+.jumbotron > h1 {
+  font-size: 40pt;
+}
+
+.jumbotron  a.btn {
+  background: rgba(255, 255, 255, 0);
+}
+
+.valign {
+  margin-top: 150px;
+}
+
+.blue {
+  color: #8db5ff;
+}
+
+#search-area {
+}
+
+#photo-area {
+}
+
+.search-results {
+  height: 400px;
+}
+
+.photo-results {
+  height: 462px;
+}
+
+.nav-container {
+  height: 100px;
+  padding-top: 30px;
+  text-align: center;
 }
