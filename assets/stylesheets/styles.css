@@ -46,3 +46,13 @@ body {
   padding-top: 30px;
   text-align: center;
 }
+
+.panel {
+  background: rgba(155, 155, 155, .1);
+}
+
+[type=search] {
+  background: rgba(155, 155, 155, 0);
+  color: #eaeaea;
+}
+
