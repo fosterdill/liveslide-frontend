@@ -1,7 +1,8 @@
 LiveSlide.Views.Navbar = Backbone.View.extend({
   events: {
     'click a#create-button': 'create',
-    'click a#search-button': 'index'
+    'click a#search-button': 'index',
+    'click a#scrape-button': 'discover'
   },
 
   render: function () {
@@ -15,6 +16,12 @@ LiveSlide.Views.Navbar = Backbone.View.extend({
     event.preventDefault();
     if (window.location.hash != '#new')
       this.fadeOut('#new', LiveSlide.$rootEl);
+  },
+
+  discover: function (event) {
+    event.preventDefault();
+    if (window.location.hash != '#discover')
+      this.fadeOut('#discover', LiveSlide.$rootEl);
   },
 
   index: function (event) {

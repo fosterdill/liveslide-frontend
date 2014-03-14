@@ -2,6 +2,7 @@ LiveSlide.Routers.Router = Backbone.Router.extend({
   routes: {
     'welcome': 'welcome',
     'new': 'create',
+    'discover': 'discover',
     '': 'index'
   },
 
@@ -27,6 +28,11 @@ LiveSlide.Routers.Router = Backbone.Router.extend({
   create: function () {
     var createView = new LiveSlide.Views.Create();
     this._swapView(createView);
+  },
+
+  discover: function () {
+    var discoverView = new LiveSlide.Views.Discover();
+    this._swapView(discoverView);
   },
 
   _swapView: function (view) {
